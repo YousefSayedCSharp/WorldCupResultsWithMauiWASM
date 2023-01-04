@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorldCupResultsWithMauiWASM.MainPage"
+             
+             xmlns:components="clr-namespace:WorldCupResultsWithMauiWASM.Components"
+             
+             FlowDirection="RightToLeft"
+             BackgroundColor="Black"
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+            
+            <!--<WebView Source="index.html" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" FlowDirection="RightToLeft" IsEnabled="False" />-->
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75" />
+                    <RowDefinition Height="75" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="100">
+                    <Image Source="pattern.png" Aspect="AspectFit" BackgroundColor="Black" />
+                </StackLayout>
+                <VerticalStackLayout Padding="20" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+                    <Label Text="كأس" TextColor="White" FontSize="50"
+                           AutomationProperties.IsInAccessibleTree="True"
+                           />
+                    <Label Text="العالم" TextColor="White" FontSize="50"
+                           AutomationProperties.IsInAccessibleTree="True"
+                           />
+                </VerticalStackLayout>
+                <VerticalStackLayout BackgroundColor="White" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Padding="15" Margin="0,10,0,0">
+                    <Image Source="qatarword.png" BackgroundColor="White" SemanticProperties.Description="Qatar Word 2022 Logo" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="2" Grid.Row="0">
+                    <Image Source="logo.png" BackgroundColor="Black" HeightRequest="150" />
+                </VerticalStackLayout>
+            </Grid>
+            <!--<Editor Text="{Binding txt}" />-->
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+            <Label Text="{Binding lblMatches}" TextColor="White" FontSize="30" Padding="0,10,10,0"
+                   Grid.ColumnSpan="2"
+                   Grid.Column="0"
+                   />
+                    <Button TextColor="White" BackgroundColor="Black" CornerRadius="0" BorderColor="White" BorderWidth="0" HorizontalOptions="End" VerticalOptions="Start" Padding="3" Margin="5,1"
+                        Command="{Binding btnRefresh}"
+                        SemanticProperties.Description="Refresh"
+                        FontSize="Title"
+                    FontFamily="FAS"
+                        Text="&#xf2f9;"
+                            Grid.Column="1"
+                    />
+                </Grid>
+                <BoxView BackgroundColor="White" HeightRequest="1" />
+            <components:MatchesContentView  />
+            </VerticalStackLayout>
+
+                    <VerticalStackLayout>
+                        <Label Text="المجموعات" TextColor="White" FontSize="30" Padding="0,10,10,0" />
+                        <BoxView BackgroundColor="White" HeightRequest="1" />
+                        <components:MyCollectionView />
+                    </VerticalStackLayout>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

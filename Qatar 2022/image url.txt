@@ -1,0 +1,39 @@
+NED | https://crests.football-data.org/8601.svg
+ECU | https://crests.football-data.org/791.svg
+SEN | https://crests.football-data.org/senegal.svg
+QAT | https://crests.football-data.org/8030.svg
+
+ENG | https://crests.football-data.org/770.svg
+IRN | https://crests.football-data.org/iran.svg
+//USA | https://crests.football-data.org/usa.svg
+WAL | https://crests.football-data.org/833.svg
+
+POL | https://crests.football-data.org/794.svg
+//ARG | https://crests.football-data.org/762.png
+KSA | https://crests.football-data.org/saudi_arabia.svg
+MEX | https://crests.football-data.org/769.svg
+
+FRA | https://crests.football-data.org/773.svg
+//AUS | https://crests.football-data.org/779.svg
+DEN | https://crests.football-data.org/782.svg
+TUN | https://crests.football-data.org/tunisia.svg
+
+ESP | https://crests.football-data.org/760.svg
+JPN | https://crests.football-data.org/766.svg
+GER | https://crests.football-data.org/759.svg
+CRC | https://crests.football-data.org/costa_rica.svg
+
+BEL | https://crests.football-data.org/805.svg
+CRO | https://crests.football-data.org/799.svg
+MAR | https://crests.football-data.org/morocco.svg
+//CAN | https://crests.football-data.org/canada.svg
+
+//BRA | https://crests.football-data.org/764.svg
+SUI | https://crests.football-data.org/788.svg
+CMR | https://crests.football-data.org/cameroon.svg
+SRB | https://crests.football-data.org/780.svg
+
+POR | https://crests.football-data.org/765.svg
+//KOR | https://crests.football-data.org/772.png
+URU | https://crests.football-data.org/758.svg
+GHA | https://crests.football-data.org/ghana.svg
